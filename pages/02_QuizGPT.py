@@ -153,10 +153,10 @@ if not docs or not get_llm():
         """
     )
 
-    if 'api_key' in st.session_state and st.session_state.api_key:
-        st.write(st.session_state.api_key)
-    else:
+    if not ('api_key' in st.session_state and st.session_state.api_key):
         st.warning("Please enter your OpenAI API key in the sidebar")
+        st.stop()
+
 else:
     try:
         response = run_quiz_chain(docs, topic if topic else file.name, difficulty)
