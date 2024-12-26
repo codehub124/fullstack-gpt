@@ -28,19 +28,7 @@ with st.sidebar:
     st.title("Sidebar title")
     st.text_input("Input text")
 
-st.title("FullstackGPT Home")
-
-tab1, tab2, tab3 = st.tabs(["tab1", "tab2", "tab3"])
-
-with tab1:
-    st.write("tab1")
-    
-with tab2:
-    st.write("tab2")
-
-with tab3:
-    st.write("tab3")
-    
+st.title("FullstackGPT Home")    
     
 st.markdown("""
     # Hello!
@@ -49,7 +37,11 @@ st.markdown("""
     
     Here are the apps I made:
     
-    - [DocumentGPT](/DocumentGPT)
+    - ✅ [DocumentGPT](/DocumentGPT)
     - [PrivateGPT](/PrivateGPT)
-    - [QuizGPT](/QuizGPT)
+    - ✅ [QuizGPT](/QuizGPT)
+    - [PrivateGPT](/PrivateGPT)
+    - ✅ [SiteGPT](/SiteGPT)
+    - [MeetingGPT](/MeetingGPT)
+    - ✅ [InvestorGPT](/InvestorGPT)
 """)
